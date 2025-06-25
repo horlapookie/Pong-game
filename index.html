@@ -1,12 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple Pong Game</title>
-      <link rel="stylesheet" href="style.css">
-      </head>
-      <body>
-        <canvas id="pong" width="800" height="500"></canvas>
-          <script src="game.js"></script>
-          </body>
-          </html>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /*  Basic inline styles for responsiveness. Consider moving to style.css for better organization */
+        body {
+            background: #20232a;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: sans-serif; /* Add a default font */
+        }
+
+        #gameContainer {
+            box-shadow: 0 0 20px #000;
+            border-radius: 10px;
+            overflow: hidden;
+            max-width: 800px; /* Ensure it doesn't exceed the canvas width */
+            width: 100%; /* Take up the available width */
+        }
+
+        #pongCanvas {
+            background: #282c34;
+            display: block;
+            border-radius: 10px;
+            width: 100%; /* Make the canvas responsive */
+            height: auto; /* Maintain aspect ratio */
+        }
+    </style>
+</head>
+<body>
+    <div id="gameContainer">
+        <canvas id="pongCanvas" width="800" height="500"></canvas>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
