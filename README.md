@@ -1,4 +1,4 @@
-# Pong Game
+# Simple Pong Game
 
 A classic Pong game implemented using HTML, CSS, and JavaScript.
 
