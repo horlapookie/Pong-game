@@ -4,12 +4,12 @@
   "description": "Simple Pong game",
   "main": "index.html",
   "scripts": {
-    "start": "http-server"
+    "start": "http-server ."
   },
   "dependencies": {
-    "http-server": "^14.1.7"
+    "http-server": "latest"
   },
   "engines": {
-    "node": ">=16"
+    "node": "18"
   }
 }
