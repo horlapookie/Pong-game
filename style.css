@@ -1,21 +1,43 @@
+/* style.css */
+
 body {
-        background: #20232a;
-            display: flex;
-                justify-content: center;
-                    align-items: center;
-                        height: 100vh;
-                            margin: 0;
-                            }
+    background: #20232a;
+    display: flex;
+    flex-direction: column; /* Changed to column */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Use min-height */
+    margin: 0;
+    font-family: sans-serif;
+    color: #fff; /* Set a default text color */
+}
 
-                            #gameContainer {
-                                box-shadow: 0 0 20px #000;
-                                    border-radius: 10px;
-                                        overflow: hidden;
-                                        }
+#gameContainer {
+    box-shadow: 0 0 20px #000;
+    border-radius: 10px;
+    overflow: hidden;
+    max-width: 800px;
+    width: 90%; /* Slightly smaller width for padding */
+    margin-bottom: 20px; /* Add some space below the game */
+}
 
-                                        #pongCanvas {
-                                            background: #282c34;
-                                                display: block;
-                                                    border-radius: 10px;
-                                                    }
+#pongCanvas {
+    background: #282c34;
+    display: block;
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    font-size: 0.8em;
+    color: #888;
+    margin-top: 10px;
+}
+
+footer a {
+    color: #61dafb;
+    text-decoration: none;
 }
